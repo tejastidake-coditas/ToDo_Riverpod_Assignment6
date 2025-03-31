@@ -59,7 +59,7 @@ class TodayListTile extends ConsumerWidget {
           ? IconButton(
               icon: const Icon(
                 Icons.delete,
-                color: Colors.red,
+                color: ColorConstants.red,
               ),
               onPressed: () {
                 _showDeleteDialog(context, ref, todo.todoId);
@@ -76,7 +76,7 @@ class TodayListTile extends ConsumerWidget {
         return AlertDialog(
           icon: const Icon(
             Icons.warning_amber,
-            color: Colors.red,
+            color: ColorConstants.red,
           ),
           title: Text(TextConstants.deleteDialogTitle),
           content: Text(TextConstants.deleteDialogDesc),

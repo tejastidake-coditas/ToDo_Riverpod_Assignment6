@@ -17,9 +17,7 @@ class TimePickerWidget extends ConsumerWidget {
           mode: CupertinoDatePickerMode.time,
           use24hFormat: true,
           onDateTimeChanged: (DateTime newTime) {
-            ref
-                .read(selectedTimeProvider.notifier)
-                .state =
+            ref.read(selectedTimeProvider.notifier).state =
                 TimeOfDay(hour: newTime.hour, minute: newTime.minute);
           },
         );
@@ -43,7 +41,7 @@ class TimePickerWidget extends ConsumerWidget {
             ),
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
             child: Text(
-              formattedTime.split(" ")[0], // Extract time part
+              formattedTime.split(" ")[0],
               style: TextStyleConstants.selectedTimeStyle,
               textAlign: TextAlign.center,
             ),
@@ -69,7 +67,7 @@ class TimePickerWidget extends ConsumerWidget {
             ],
           ),
           child: Text(
-            formattedTime.split(" ")[1], // Extract AM/PM part
+            formattedTime.split(" ")[1],
             style: TextStyleConstants.selectedTimeStyle,
             textAlign: TextAlign.center,
           ),

@@ -15,6 +15,7 @@ class ColorConstants {
   static const Color hintTextColor = Color(0x4D3C3C43);
   static const Color noteText = Color(0x993C3C43);
   static const Color borderSideColor = Color(0x33000000);
+  static const Color red = Colors.red;
 
   static const Color backgroundColor = Color(0xffF7F8FA);
   static const Color backgroundColorWithOpacity = Color(0xF0F9F9F9);
